@@ -1,0 +1,7 @@
+/* dimensione over xs */
+
+@media screen and (min-width: 500px) {
+    :root{
+        --lateralmenu-width: 100px;
+    }
+}

@@ -43,7 +43,6 @@ img{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
     padding: 6px;
     color: white;
     justify-content: space-between;
@@ -54,6 +53,13 @@ img{
     width: 70%;
     margin-bottom: 10px;
     height: 10%;
+}
+
+.biglogo-leftmenu{
+    display: none;
+    margin-bottom: 10px;
+    height: 10%;  /*chiedere perchè non cresce il big logo all'aumentare delle dimensioni*/
+    
 }
 
 .navigation ul{
@@ -81,6 +87,10 @@ img{
     display: flex;
     flex-direction: column;
     
+}
+
+.users-account hr{
+    margin-bottom: 5px;
 }
 
 /* CAROSELLO-HEADER */
@@ -139,6 +149,10 @@ img{
 }
 
 
+.recently-played{
+    margin-bottom: 30px; /*chiedere il perchè le immagini non sono allineate probabilmente è dovuto al gap chiedere consiglio*/
+}
+
 
 .recently-played h2{
     color: white;
@@ -172,7 +186,7 @@ img{
 /* CREATED FOR */
 .created-for{
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .created-for h2{
@@ -197,6 +211,7 @@ img{
 .popular-artist{
     color: white;
     margin-bottom: 15px;
+    gap: 10px;
 }
 
 .popular-artist h2{
@@ -282,7 +297,7 @@ img{
 
 /* PROGRESS BAR */
 .progressbar{
-    width: 65%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     color: white;
@@ -300,10 +315,63 @@ img{
     font-size: 30px;
 }
 
+.timebar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    max-width: 100%;
+}
+
+.timebar p{
+    font-size: 10px;
+}
+
+.start{
+    width: 10%;
+}
+
+.end{
+    width: 10%;
+}
+
+.line-off{
+    height: 3px;
+    /* width: 450px;  chiedere come correggere la larghezza della barra */
+    /* max-width: 100%; */
+    background-color: rgb(130, 130, 130);
+    
+}
 
 /* MENU SECTION */
 .menu-section{
-    width: 10%;
-    /* debug */
-    background-color: darkolivegreen;
+    width: 20%;
+    display: flex;
+    
+    align-items: center;
+}
+
+.menu-logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo ul{
+    list-style-type: none;
+    display: flex;
+    width: 40%;
+    font-size: 8px;
+    gap: 6px;
+
+}
+
+.menu-logo ul li a{
+    color: white;
+}
+
+.small-timebar{
+    width: 60%;
+    height: 5px;
+    display: inline-block;
 }

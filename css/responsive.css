@@ -1,6 +1,6 @@
 /* dimensione over xs */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 552px) {
     :root{
         --lateralmenu-width: 100px;
     }
@@ -8,6 +8,15 @@
     /* .menu-bar{
         align-items: center;
     } */
+
+    .logo-leftmenu{
+        display: none;
+    }
+
+    .biglogo-leftmenu{
+        display: block;
+       
+    }
 
     .playlist{
         display: block;
@@ -20,4 +29,27 @@
     .logo-leftmenu{
         width: 50%;
     }
+}
+
+
+/* DMENSIONE MINIMA 768PX */
+
+@media screen and (min-width: 768px) {
+
+    .music-card{
+        width: 20%;
+    }
+
+    
+}
+
+
+/* DIMENSIONE MINIMA 1000 */
+
+@media screen and (min-width: 1000px) {
+
+    .music-card{
+        width: 14%;
+    }
+    
 }

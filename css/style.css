@@ -75,10 +75,11 @@ img{
 }
 
 
-.users-account ul{
-    list-style-type: none;
-    max-width: 70%;
+.users-account{
+    width: 70%;
     height: 10%;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -88,8 +89,6 @@ img{
     width: calc(100% - var(--lateralmenu-width));
     display:flex;
     flex-wrap: wrap;
-    /* Debug */
-    background-color: rgb(0, 13, 255);
 }
 
 .header{
@@ -229,31 +228,80 @@ img{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    gap: 10px; 
+    padding: 10px;
+    gap: 15px; 
     background-color: rgb(49, 49, 49);
 }
 
+
+/* MINI TUMBNAIL */
 .music-icon{
-    width: 25%;
+    width: 20%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.small-tumbnail{
+    width: 50%;
+    display: flex;
+    gap: 5px;
+    /* flex-grow: 1; */
+}
+
+.small-tumbnail img{
+    width: 80%;
+
+}
+
+.minititle{
+    width: 20%;
+    font-size: 8px;
+}
+
+.minititle h5{
+    color: white;
+}
+
+.minititle p{
+    color: rgb(105, 107,113) ;
+    font-size: 6px;
+}
+
+.logo-list{
+    width: 50%;
     display: flex;
     flex-direction: column;
-    /* debug */
-    background-color: cyan;
+    list-style-type: none;
+    font-size: smaller;
+    justify-content: space-around ;
+    color: rgb(105, 107,113) ;
 }
 
-.logo-list ul{
-    display: flex;
-    align-items: center;
-}
 
+/* PROGRESS BAR */
 .progressbar{
     width: 65%;
-    /* debug */
-    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 
+.comand ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    /* choedere come ridurre lo spazio tra gli elementi dei bottoni */
+}
+
+.comand ul li:nth-child(3){
+    font-size: 30px;
+}
+
+
+/* MENU SECTION */
 .menu-section{
     width: 10%;
     /* debug */

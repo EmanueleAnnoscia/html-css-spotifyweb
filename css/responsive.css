@@ -4,4 +4,20 @@
     :root{
         --lateralmenu-width: 100px;
     }
+
+    /* .menu-bar{
+        align-items: center;
+    } */
+
+    .playlist{
+        display: block;
+    }
+
+    .navigation ul{
+        width: 50%;
+    }
+
+    .logo-leftmenu{
+        width: 50%;
+    }
 }

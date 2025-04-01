@@ -1,7 +1,7 @@
 /* ROOT */
 :root{
-    --mediabar-height: 100px;
-    --lateralmenu-width: 50px;
+    --mediabar-height: 85px;
+    --lateralmenu-width: 40px;
     --header-height: 75px;
 }
 
@@ -42,20 +42,45 @@ img{
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
-    padding: 7px;
+    flex-direction: column;
+    
+    padding: 6px;
     color: white;
+    justify-content: space-between;
+    padding-left: 10px;  /*  chiedere il malfunzionamento di align items */
+}
+
+.logo-leftmenu{
+    width: 70%;
+    margin-bottom: 10px;
+    height: 10%;
 }
 
 .navigation ul{
-    display: flex;
-    flex-wrap: wrap;
+    width: 70%;
+    list-style-type: none;
+    height: 30%;
 }
 
 .playlist{
     display: none;
+    height: 50%;
+}
+
+.playlist-name ul{
+    width: 70%;
+    list-style-type: none;
+    font-size: 10px;
+
 }
 
 
+.users-account ul{
+    list-style-type: none;
+    max-width: 70%;
+    height: 10%;
+    
+}
 
 /* CAROSELLO-HEADER */
 
@@ -82,7 +107,9 @@ img{
     color: white;
     border: 1px solid white;
     border-radius: 25px;
-    padding: 15px;
+    padding: 10px;
+    font-size: 8px;
+    margin-right: 10px;
     
 
 }

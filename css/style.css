@@ -48,7 +48,7 @@ img{
     padding-top: 6px;
     color: white;
     justify-content: space-between;
-    padding-left: 7px;  /*  chiedere il malfunzionamento di align items */
+    padding-left: 7px;
 }
 
 .high-menu{
@@ -70,6 +70,7 @@ img{
 
 .navigation ul{
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .navigation ul li{
@@ -80,6 +81,9 @@ img{
 .navigation ul li a {
     text-decoration: none;
     color: rgb(105, 107,113);
+    display: flex;
+    gap: 5px;
+
 }
 
 .hidden-description{
@@ -113,27 +117,42 @@ img{
 
 }
 
+.new-playlist a:hover{
+    
+    background-color: white;
+
+}
+
 .playlist-name li{
     color: rgb(105, 107,113);
     margin-bottom: 10px;
     font-weight: bold;
 }
 
+.playlist-name li:hover{
+    color: white;
+
+}
 
 .users-account{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;    
-    justify-content: left;
-    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.users-account a{
+    display: flex;
 }
 
 .users-account p{
     display: none;
+    padding: 10px;
 }
 
 .users-account hr{
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 3px;
 }
 
 /* CAROSELLO-HEADER */
@@ -143,6 +162,12 @@ img{
     display:flex;
     flex-wrap: wrap;
 }
+
+.header a:hover{
+    font-size: 7px;
+    margin-left: 5px;
+}
+
 
 .header{
     height: var(--header-height);
@@ -192,13 +217,20 @@ img{
     font-size: 10px;
     justify-content: center;
     margin-bottom: 25px;
-    /* chiedere perchè nel breakpoint l'elenco non mantiene la centralità nonostante il justify content centrale */
+}
+
+.chooseforyou li a{
+    text-decoration: none;
+    color:  rgb(105, 107,113) ;
+}
+
+.chooseforyou a:hover{
+    color: white;
 
 }
 
-
 .recently-played{
-    margin-bottom: 30px; /*chiedere il perchè le immagini non sono allineate probabilmente è dovuto al gap chiedere consiglio*/
+    margin-bottom: 30px; 
 }
 
 
@@ -221,6 +253,22 @@ img{
         margin-bottom: 10px;
         justify-content: center;
 }
+
+/* .tumbnail{
+    position: relative;
+}
+
+.trasparency{
+    flex: 1;
+    display: none;
+    position: absolute;
+}
+
+.tumbnail:hover .transparency{
+    display:block;
+    background-color: (black, 0.6);
+    color: white;
+} */
 
 
 .music-card h4{
@@ -306,11 +354,10 @@ img{
 }
 
 .small-tumbnail{
-    min-width: 60%;
+    min-width: 40%;
     display: flex;
     gap: 5px;
     align-items: center;
-    /* flex-grow: 1; */
 }
 
 .small-tumbnail img{
@@ -320,28 +367,36 @@ img{
 
 .minititle{
     width: 20%;
-    font-size: 8px;
 }
 
 .minititle h5{
     color: white;
+    font-size: 9px;
 }
 
 .minititle p{
     color: rgb(105, 107,113) ;
-    font-size: 6px;
+    font-size: 8px;
+}
+
+.minititle p:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 .logo-list{
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     list-style-type: none;
     font-size: smaller;
-    justify-content: space-around ;
+    justify-content: space-between ;
     color: rgb(105, 107,113) ;
 }
 
+.logo-list i:hover{
+    color: white;
+}
 
 /* PROGRESS BAR */
 .progressbar{
@@ -364,6 +419,10 @@ img{
 .comand ul li:nth-child(3){
     font-size: 30px;
 }
+
+/* .comand ul li:nth-child(3):hover{
+    font-size: 31px;
+} */
 
 .timebar{
     display: flex;
@@ -393,7 +452,22 @@ img{
     height: 3px;
     width: 100%;
     background-color: rgb(130, 130, 130);
-    
+    /* position: relative;
+    right: 15px; */
+}
+
+.line-on{
+    position: absolute;
+    display: none;
+    height: 3px;
+    width: 50%;
+    background-color: white;
+    /* right: 40px; chiedi per allineare */
+}
+
+
+.line-off:hover .line-on{
+    display: block;
 }
 
 /* MENU SECTION */

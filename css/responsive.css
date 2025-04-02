@@ -26,7 +26,14 @@
         
     }
 
-    
+    .left-logolist{
+        width: 20%;
+        display: flex;
+    }
+        
+    .hidden-description{
+        display: block;
+    }
 }
 
 

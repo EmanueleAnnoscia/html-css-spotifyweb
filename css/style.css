@@ -86,6 +86,10 @@ img{
 
 }
 
+.navigation a:hover{
+    color: white;
+}
+
 .hidden-description{
     display: none;
 }

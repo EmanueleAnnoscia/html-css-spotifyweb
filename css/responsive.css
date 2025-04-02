@@ -30,9 +30,34 @@
         width: 20%;
         display: flex;
     }
+
+
         
     .hidden-description{
         display: block;
+    }
+
+
+    .playlist h3{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .new-playlist a{
+        background-color: grey;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin-right: 5px;
+
+    }
+
+    .new-playlist p{
+        color: grey;
+        display: inline-block;
+        font-size: small;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
 

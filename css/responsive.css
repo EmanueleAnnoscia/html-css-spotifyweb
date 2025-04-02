@@ -2,12 +2,9 @@
 
 @media screen and (min-width: 552px) {
     :root{
-        --lateralmenu-width: 100px;
+        --lateralmenu-width: 150px;
     }
 
-    /* .menu-bar{
-        align-items: center;
-    } */
 
     .logo-leftmenu{
         display: none;
@@ -15,6 +12,7 @@
 
     .biglogo-leftmenu{
         display: block;
+        width: 100%;
        
     }
 
@@ -22,13 +20,13 @@
         display: block;
     }
 
-    .navigation ul{
-        width: 50%;
+    .left-logolist p{
+        display: block;
+        font-size: small;
+        
     }
 
-    .logo-leftmenu{
-        width: 50%;
-    }
+    
 }
 
 

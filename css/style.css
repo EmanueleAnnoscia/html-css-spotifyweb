@@ -69,13 +69,23 @@ img{
 }
 
 .navigation ul{
-    width: 100%;
     margin-bottom: 20px;
+}
+
+.navigation span{
+    display: inline;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.navigation img{
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
 }
 
 .navigation ul li{
     list-style-type: none;
-    width: 60%;
 }
 
 .navigation ul li a {
@@ -263,9 +273,13 @@ img{
 }
 
 .trasparency{
-    flex: 1;
     display: none;
     position: absolute;
+    background-color: (0, 0, 0, 0.6);
+}
+
+.transparency i{
+    z-index: 10;
 }
 
 .tumbnail:hover .transparency{

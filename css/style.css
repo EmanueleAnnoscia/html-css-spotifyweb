@@ -258,7 +258,7 @@ img{
         justify-content: center;
 }
 
-/* .tumbnail{
+.tumbnail{
     position: relative;
 }
 
@@ -272,7 +272,7 @@ img{
     display:block;
     background-color: (black, 0.6);
     color: white;
-} */
+}
 
 
 .music-card h4{
@@ -421,7 +421,7 @@ img{
 
 
 .comand ul li:nth-child(3){
-    font-size: 30px;
+    font-size: 35px;
 }
 
 /* .comand ul li:nth-child(3):hover{
@@ -456,22 +456,42 @@ img{
     height: 3px;
     width: 100%;
     background-color: rgb(130, 130, 130);
-    /* position: relative;
-    right: 15px; */
+    position: relative;
+    /*right: 15px; */
 }
 
 .line-on{
     position: absolute;
-    display: none;
     height: 3px;
-    width: 50%;
+    width: 23%;
     background-color: white;
-    /* right: 40px; chiedi per allineare */
+    bottom: 15px;
+    /* display: none; */
+    z-index: 10;
+}
+
+.circle-progress{
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;   
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    z-index: 11;
+    display: none;
+     
 }
 
 
-.line-off:hover .line-on{
-    display: block;
+
+.line-on:hover {
+    background-color: rgb(59, 246, 59);
+}
+
+.line-on:hover .circle-progress{
+    display: block; 
+    /* chiedi il  perchè del malfunzionamento */
 }
 
 /* MENU SECTION */
@@ -504,4 +524,46 @@ img{
 
 .small-timebar{
     width: 70%;
+}
+
+.small-lineoff{
+    height: 3px;
+    width: 100%;
+    background-color: rgb(130, 130, 130);
+    position: relative;
+    /*right: 15px; */
+
+}
+
+.small-circle-progress{
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;   
+    position: absolute;
+    bottom: 38px;
+    right: 8%;
+    z-index: 11;
+    display: none;
+
+}
+
+.small-lineon{
+    position: absolute;
+    height: 3px;
+    width: 7%;
+    background-color: white;
+    bottom: 41px;
+    /* display: none; */
+    z-index: 10;
+
+}
+
+.small-lineon:hover {
+    background-color: rgb(59, 246, 59);
+}
+
+.small-lineoff:hover .circle-progress{
+    display: block; 
+    /* chiedi il  perchè del malfunzionamento */
 }
